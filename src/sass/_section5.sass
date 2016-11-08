@@ -1,0 +1,37 @@
+@import 'variables'
+
+.section5
+	padding-top: 97px
+	padding-bottom: 145px
+	//background: url('../img/bg_sect5.jpg') no-repeat center center
+
+	.sect_content
+		padding-top: 33px
+
+		.sect_content_text
+			padding-bottom: 23px
+
+		.social_buttons_list
+			padding-top: 10px
+
+			li
+				float: left
+				margin-right: 20px
+				margin-bottom: 20px
+
+			a
+				display: block
+				position: relative
+				width: 64px
+				height: 64px
+				font-size: 30px
+				line-height: 30px
+				border: 2px solid $color-bg-white
+
+				&:hover
+					color: $color-main
+					border-color: $color-main
+
+				i
+					display: block
+					+align-absolute()

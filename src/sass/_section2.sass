@@ -1,0 +1,69 @@
+@import 'variables'
+
+.section2
+	padding-bottom: 50px
+
+	#portfolio_grid_container
+		.mix
+			display: none
+
+	.filters_nav
+		float: right
+		position: relative
+		top: 4px
+		z-index: 1
+		a
+			color: $color-text-grey
+
+
+	.sect_items_container
+		padding-top: 80px
+
+	.sect_item
+		position: relative
+		margin-bottom: 30px
+		cursor: pointer
+
+		&:hover .item_overlay
+			opacity: 1
+
+
+		.item_img
+			display: block
+			width: 100%
+
+		.item_overlay
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			background-color: rgba($color-bg-sect2-overlay, 0.8)
+			opacity: 0
+			transition: all 0.3s
+
+			.plus
+				+align-absolute()
+				font-family: "SegoeUILight", $helvetica
+				font-size: 72px
+				color: #fff
+
+.mfp-fade.mfp-bg 
+	opacity: 0
+	transition: all 0.25s ease-out
+
+.mfp-fade.mfp-bg.mfp-ready 
+	opacity: 0.8
+
+.mfp-fade.mfp-bg.mfp-removing 
+	opacity: 0
+
+.mfp-fade.mfp-wrap .mfp-content 
+	opacity: 0
+	transition: all 0.25s ease-out
+
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content 
+	opacity: 1
+
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content 
+	opacity: 0

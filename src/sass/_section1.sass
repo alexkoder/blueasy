@@ -1,0 +1,31 @@
+@import 'variables'
+
+.section1
+	background-color: $color-main
+	padding-bottom: 40px
+
+	.sect_items_container
+		padding-top: 38px
+
+	.sect_item
+		position: relative
+		margin-bottom: 35px
+		opacity: 0
+		top: -25px
+		transition: all 0.5s
+
+		&.on
+			opacity: 1
+			top: 0
+
+		.item_icon
+			height: 48px
+
+		.item_title
+			font-size: $fs-sect1-item-title
+			text-transform: uppercase
+			padding: 20px 0 12px 0
+
+		.item_descr
+			font-size: $fs-sect1-item-descr
+			line-height: $lh-sect1-item-descr

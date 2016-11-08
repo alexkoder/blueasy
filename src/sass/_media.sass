@@ -1,0 +1,155 @@
+@import 'variables'
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	
+	.main_menu_nav_template li a
+		margin-left: 0px
+
+	.section3
+		.sect_content	
+			iframe.sect_content_video
+				margin-top: 50px
+				float: none
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	
+	/*Disable Animation on Mobile Devices*/
+	.animated
+		/*CSS transitions*/
+		-o-transition-property: none !important
+		-moz-transition-property: none !important
+		-ms-transition-property: none !important
+		-webkit-transition-property: none !important
+		transition-property: none !important
+		/*CSS transforms*/
+		-o-transform: none !important
+		-moz-transform: none !important
+		-ms-transform: none !important
+		-webkit-transform: none !important
+		transform: none !important
+		/*CSS animations*/
+		-webkit-animation: none !important
+		-moz-animation: none !important
+		-o-animation: none !important
+		-ms-animation: none !important
+		animation: none !important
+
+	.header_navbar_outer
+
+		.header_navbar_inner
+			height: 120px
+		
+		.header_nav
+			display: none
+			transform: none
+			top: 120px
+			right: -15px			
+			//background-color: rgba($color-bg-navbar, 0.85)
+			z-index: 100
+
+			li
+				display: block
+				min-width: 300px
+				text-align: right
+				a
+					padding: 7px 25px
+					background-color: rgba($color-bg-navbar, 0.95)
+					&.active, &:hover
+						color: $color-main
+						border-color: transparent
+						background-color: rgba($color-bg-navbar, 0.65)
+
+	.section2
+		position: relative
+
+		.filters_nav
+			position: absolute
+			top: 160px
+			left: 15px
+
+		.sect_items_container
+			padding-top: 110px
+				
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 570px)
+	
+	.section2
+		.filters_nav
+			a
+				margin-left: 0px
+				margin-right: 10px
+				padding: 3px 0px
+				&.active
+					border-color: transparent
+
+	.section3
+		.sect_content	
+			iframe.sect_content_video
+				width: 100%
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.header_blockquote_wrap
+		.header_blockquote
+			font-size: 36px
+			line-height: 64px
+
+	.footer .footer_menu a
+		margin: 0 7px
+
+	.section2
+		.sect_items_container
+			padding-top: 130px
+
+	.section3
+		.sect_title
+			line-height: 36px
+			&:after
+				content: none
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 769px)
+	/**/
+	.header_navbar_outer		
+		.header_nav
+			display: block !important
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
